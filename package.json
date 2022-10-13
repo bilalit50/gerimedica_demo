@@ -5,4 +5,9 @@
   "dependencies": {
     "cypress-real-events": "^1.7.1"
   }
+  "scripts": {
+		"cy:open": "cypress open",
+		"cy:run": "cypress run",
+		"cy:run-dashboard": "cypress run --record --key 02e0e3a8-d0d5-4388-b5d2-2774663aa4db"
+	},
 }
