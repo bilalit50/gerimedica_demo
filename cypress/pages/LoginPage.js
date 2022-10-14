@@ -1,9 +1,12 @@
-import { username, userPassword } from "..//..//config";
-export default class LoginPage {
+import BasicFuncation from "../BasicFuncation";
+
+export default class LoginPage extends BasicFuncation {
   static loginPageVisible() {
     cy.isVisible(".login-page");
   }
   static loginUser() {
-    cy.userLogin(username, userPassword);
+    cy.fixture("UserLoginData").then((loginData) => {
+      cy.userLogin(loginData.username, loginData.password);
+    });
   }
 }

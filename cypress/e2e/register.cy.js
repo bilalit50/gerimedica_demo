@@ -1,11 +1,9 @@
 import RegisterPage from "..//pages/RegisterPage";
 import Navbar from "../components/Navbar";
-import { url } from "..//..//config";
 describe("Register user Test", () => {
-  before(function () {
-    cy.visit(url);
+  it("Should open Url", () => {
+    RegisterPage.url();
   });
-
   it("Should click on navbar register link", () => {
     Navbar.clickOnRegister();
   });
@@ -13,12 +11,12 @@ describe("Register user Test", () => {
     RegisterPage.RegisterPageVisible();
   });
   it("Should fill out register form", () => {
-    RegisterPage.RegisterUser();
+    RegisterPage.RegisterFormFillOut();
   });
   it("Should click on register Button", () => {
-    RegisterPage.ClickOnRegisterBtn();
+    RegisterPage.clickOnRegisterBtn();
   });
-  it("Should visible register page", () => {
-    RegisterPage.RegisterPageVisible();
+  it("Take screenshot with percy of register page", () => {
+    cy.percySnapshot();
   });
 });

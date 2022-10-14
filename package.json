@@ -1,13 +1,20 @@
 {
+  "name": "ecommerce_complete_testing",
+  "version": "1.0.0",
+  "description": "eCommerce",
+  "main": "index.js",
   "devDependencies": {
+    "@percy/cli": "^1.11.0",
+    "@percy/cypress": "^3.1.2",
     "cypress": "^10.9.0"
   },
   "dependencies": {
     "cypress-real-events": "^1.7.1"
-  }
+  },
   "scripts": {
-		"cy:open": "cypress open",
-		"cy:run": "cypress run",
-		"cy:run-dashboard": "cypress run --record --key 02e0e3a8-d0d5-4388-b5d2-2774663aa4db"
-	},
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:percy": "percy exec -- cypress run"
+  }
+  
 }

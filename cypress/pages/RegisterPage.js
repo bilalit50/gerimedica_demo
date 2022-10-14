@@ -1,33 +1,26 @@
-import {
-  firstname,
-  lastname,
-  dayOfBirth,
-  monthOfBirth,
-  yearOfBirth,
-  email,
-  password,
-  confrimPassword,
-} from "..//..//config";
+import BasicFuncation from "../BasicFuncation";
 
-export default class RegisterPage {
+export default class RegisterPage extends BasicFuncation {
   static RegisterPageVisible() {
     cy.isVisible(".registration-page");
   }
 
-  static RegisterUser() {
-    cy.userRegister(
-      firstname,
-      lastname,
-      dayOfBirth,
-      monthOfBirth,
-      yearOfBirth,
-      email,
-      password,
-      confrimPassword
-    );
+  static RegisterFormFillOut() {
+    cy.fixture("UserRegisterData").then((data) => {
+      cy.userRegister(
+        data.FirstName,
+        data.LastName,
+        data.dayOfBirth,
+        data.monthOfBirth,
+        data.yearOfBirth,
+        data.Email,
+        data.CompanyName,
+        data.Password,
+        data.ConfirmPassword
+      );
+    });
   }
-
-  static ClickOnRegisterBtn() {
+  static clickOnRegisterBtn() {
     cy.get("#register-button").click();
   }
 }

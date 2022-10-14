@@ -1,10 +1,9 @@
 import Navbar from "../components/Navbar";
 import ShoppingCartPage from "../pages/ShoppingCartPage";
-import { url } from "..//..//config";
 
 describe("Should Shopping cart page test", () => {
   before(function () {
-    cy.visit(url);
+    ShoppingCartPage.url();
   });
   it("Should click on Navbar shopping cart link", () => {
     Navbar.clickOnShoppingCart();
