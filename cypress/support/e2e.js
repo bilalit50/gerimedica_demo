@@ -17,6 +17,11 @@
 
 import "./commands";
 import "cypress-real-events/support";
+import "cypress-plugin-tab";
+
+Cypress.on("uncaught:exception", (err, runnable) => {
+  return false;
+});
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

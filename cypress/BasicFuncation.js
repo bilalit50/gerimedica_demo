@@ -1,8 +1,8 @@
 export default class {
   static url() {
-    cy.visit("https://demo.nopcommerce.com/");
+    cy.visit("http://demoqa.com");
   }
-  static urlverify(url) {
+  static UrlVerify(url) {
     cy.url().should("include", url);
   }
 }
