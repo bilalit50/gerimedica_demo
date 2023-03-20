@@ -3,11 +3,11 @@ import Navigate from "..//../components/Navigate";
 import OpenUrl from "../../BasicFuncation";
 import ProgressBar from "../../pages/ProgressBar";
 
-describe("Verify The Progress Bar", () => {
+describe("Verify Progress Bar", () => {
   before(() => {
     OpenUrl.url();
   });
-  it("Should Click on Widgets Navigation & Progress-Bar", () => {
+  it("Should Click on Widgets Navigation and then click on Progress-Bar", () => {
     Navigate.NavigateWidgets();
     Navigate.NavigateProgressBar();
     OpenUrl.UrlVerify("progress-bar");

@@ -2,11 +2,11 @@
 import Navigate from "..//../components/Navigate";
 import OpenUrl from "../../BasicFuncation";
 import PracticeForm from "../../pages/PracticeForm";
-describe("User Can Submit the Form.", () => {
+describe("Verify User form", () => {
   before(() => {
     OpenUrl.url();
   });
-  it("Should Click on Forms Navigation and Practice-Form", () => {
+  it("Should Click on Forms Navigation and then click on Practice-Form", () => {
     Navigate.NavigateForms();
     Navigate.NavigatePracticeForm();
     OpenUrl.UrlVerify("automation-practice-form");

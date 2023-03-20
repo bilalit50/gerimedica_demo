@@ -3,11 +3,11 @@ import Navigate from "..//../components/Navigate";
 import OpenUrl from "../../BasicFuncation";
 import EditAndReplaceNames from "../../pages/EditTableRowData";
 
-describe("User Can Edit Table Row", () => {
+describe("Verify Table Row", () => {
   before(() => {
     OpenUrl.url();
   });
-  it("Should Click on Elements Navigation And Web Table", () => {
+  it("Should Click on Elements Navigation And then click on Web Table", () => {
     Navigate.NavigateElements();
     Navigate.NavigateWebTable();
     OpenUrl.UrlVerify("webtables");

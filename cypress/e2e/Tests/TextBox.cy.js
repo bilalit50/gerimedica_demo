@@ -2,7 +2,7 @@
 import Navigate from "..//../components/Navigate";
 import OpenUrl from "../../BasicFuncation";
 import TextBox from "..//../pages/TextBox";
-describe("Text Box", () => {
+describe("Verify Text Box", () => {
   before(() => {
     OpenUrl.url();
   });

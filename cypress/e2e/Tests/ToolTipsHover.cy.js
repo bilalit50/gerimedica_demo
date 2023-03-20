@@ -2,11 +2,11 @@
 import Navigate from "..//../components/Navigate";
 import OpenUrl from "../../BasicFuncation";
 import TooltipsHover from "../../pages/ToolTipsHover";
-describe("Verify The Tool Tip", () => {
+describe("Verify Tool Tip", () => {
   before(() => {
     OpenUrl.url();
   });
-  it("Should Click on Widgets Navigation & ToolTips", () => {
+  it("Should Click on Widgets Navigation and then click on ToolTips", () => {
     Navigate.NavigateWidgets();
     Navigate.NavigateToolTips();
     OpenUrl.UrlVerify("tool-tips");

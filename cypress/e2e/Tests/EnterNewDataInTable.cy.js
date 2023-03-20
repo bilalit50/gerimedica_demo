@@ -3,12 +3,12 @@ import Navigate from "..//../components/Navigate";
 import OpenUrl from "../../BasicFuncation";
 import EnterNewData from "../../pages/EnterNewDataInTable";
 
-describe("User Can Enter New Data", () => {
+describe("Enter New Data", () => {
   before(() => {
     OpenUrl.url();
   });
 
-  it("Should Click on Elements Navigation and Web Table", function () {
+  it("Should Click on Elements Navigation and then click on Web Table", function () {
     Navigate.NavigateElements();
     Navigate.NavigateWebTable();
     OpenUrl.UrlVerify("webtables");

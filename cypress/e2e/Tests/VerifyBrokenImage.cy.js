@@ -11,7 +11,7 @@ describe("Verify Broken Image", () => {
     Navigate.NavigateBrokenLinkImage();
     OpenUrl.UrlVerify("broken");
   });
-  it("Should Image is Broken ", () => {
+  it("Should verify Image is Broken ", () => {
     BrokenImage.BrokenImageVerify();
   });
 });

@@ -3,7 +3,7 @@ import Navigate from "..//../components/Navigate";
 import OpenUrl from "../../BasicFuncation";
 import CheckBox from "..//../pages/CheckBox";
 
-describe("Check Box", () => {
+describe("Verify Check Box", () => {
   before("Open Url", () => {
     OpenUrl.url();
   });
@@ -11,7 +11,7 @@ describe("Check Box", () => {
     Navigate.NavigateElements();
     Navigate.NavigateCheckBox();
   });
-  it("Verify Toggle Cloase, Check Box Uncheck and Toggle Text", () => {
+  it("Should Verify Toggle Cloase, Check Box Uncheck and Toggle Text", () => {
     CheckBox.VerifyCheckboxTree();
   });
 });
