@@ -24,7 +24,5 @@ describe("Verify Table Row", () => {
   it("Verify User Successfully Edit Data", () => {
     EditAndReplaceNames.VerifySussccfullyEdit();
   });
-  it('missing',()=>{
-    cy.log('missing')
-  })
+ 
 });
